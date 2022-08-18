@@ -1,0 +1,33 @@
+.f-container {
+    width: 100%;
+    position: relative;
+    background-color: var(--main-color,#0084ff);
+}
+.f-bg-image {
+    width: 100%;
+}
+.f-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+@media screen and (max-width: 720px) {
+    .f-container {
+        height: 110px;
+    }
+}
+.f-made {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    font-size: bolder;
+ 
+}

@@ -1,0 +1,51 @@
+.t-container {
+    width: 500px !important;
+    height: 250px;
+    border: solid #5d5d5d 6px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    opacity: 0.4;
+    flex-direction: column;
+    color: #5d5d5d;
+}
+.t-container img {
+    width: 100px;
+    border-radius: 50%;
+    max-width: 100%;
+}
+.t-container {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: start;
+}
+@media screen and (max-width: 430px) {
+    .t-container {
+        font-size: 0.8rem;
+    }
+}
+.t-container p {
+    margin-bottom: 10px;
+    text-align: right;
+    width: 100%;
+}
+.swiper-slide-active .t-container {
+    border: solid #0084ffa3  6px;
+    box-shadow: 0 0 40px #0084ff3b inset;
+    opacity: 1 !important;
+}
+.swiper {
+    width: 100% !important;
+    max-width: 1300px !important;
+    cursor: pointer;
+    height: 21.875rem;
+}
+.swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 1rem 0 !important;
+}
+

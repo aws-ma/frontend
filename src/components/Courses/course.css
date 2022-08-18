@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.f-d-r-reverse {
+    flex-direction: row-reverse;
+}
+.f-d-row {
+    flex-direction: row;
+}
+.sh-br-reverse {
+    box-shadow: 5px 10px 20px #959595;
+    border-radius: 0 10px 10px 0;
+}
+.sh-br {
+    box-shadow: -5px 10px 20px #959595;
+    border-radius: 10px 0 0 10px;
+}
+.br {
+    border-radius: 0 10px 10px 0;
+}
+.br-reverse {
+    border-radius: 10px 0 0 10px;
+}
+
+.c-container {
+    height: 7.5rem;
+    width: 37.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.1rem;
+}
+@media screen and (max-width: 960px) {
+    .c-container {
+        flex-direction: column-reverse;
+        height: auto;
+        width: auto;
+        transform: translateY(0);
+        opacity: 1;
+        animation: none;
+    }
+}
+.c-info {
+    z-index: 10;
+    height: 7.5rem;
+    width: 31.25rem;
+    display: flex;
+}
+@media screen and (max-width: 960px) {
+    .c-info {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+}
+@media screen and (max-width: 567px) {
+    .c-info {
+        flex-direction: column-reverse;
+        height: auto;
+        width: 15.25rem;
+    }
+}
+.c-descr {
+    height: 7.5rem;
+    width: 21.875rem;
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem 0.5rem;
+}
+@media screen and (max-width: 960px) {
+    .c-descr {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+}
+.c-title {
+    margin: 0;
+    margin-bottom: 0.2rem;
+    color: #fff;
+}
+.c-paragraph {
+    color: #5d5d5d;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.c-date {
+    height: 7.5rem;
+    width: 9.375rem;
+    background-color: #d4573b; /*solve*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 960px) {
+    .c-date {
+        width: 100%;
+        padding: 0.5rem;
+        height: auto;
+        border-radius: 0;
+    }
+}
+.c-icon {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #fff;
+    box-shadow: 0 0px 50px -10px #959595;
+}
+
+@media screen and (max-width: 960px) {
+    .c-icon {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+        border-radius: 10px 10px 0 0;
+    }
+}
+.line-x {
+    display: block;
+    width: 2rem;
+    height: 0.225rem;
+    position: absolute;
+    right: 100%;
+}
+.line-x-reverse {
+    left: 100% !important;
+}
+.line-y {
+    display: block;
+    height: 3.5rem;
+    width: 0.225rem;
+    position: absolute;
+    top: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .line-x,
+    .line-y {
+        display: none;
+    }
+}

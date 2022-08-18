@@ -1,0 +1,49 @@
+.sm-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+}
+.sm-item-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--main-color, #0084ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: 0 0 5px 0 #00498e;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 0.5rem;
+}
+@media screen and (max-width: 500px) {
+    .sm-item-container {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    .sm-container {
+        height: 40px;
+        width: 200px;
+        margin: 0.25rem;
+    }
+}
+.sm-item-container:hover {
+    background-color: #fff;
+}
+.sm-item-h-0:hover {
+    color: #3b5998;
+}
+.sm-item-h-1:hover {
+    color: #d7307e;
+}
+.sm-item-h-2:hover {
+    color: #0e76a8;
+}
+.sm-item-h-3:hover {
+    color: #00acee;
+}

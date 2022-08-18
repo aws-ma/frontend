@@ -1,0 +1,106 @@
+.intro-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 2rem;
+}
+@media screen and (max-width: 960px) {
+    .intro-container {
+        height: 350px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .intro-container {
+        padding-top: 0.5rem;
+    }
+}
+
+.i-text {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Rubik Dirt", cursive;
+}
+.i-text .i-text-mh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    color: var(--main-color, #0084ff);
+    background: linear-gradient(
+        -201.72deg,
+        rgb(97, 197, 233),
+        rgb(233, 97, 222),
+        rgb(97, 197, 233)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 36px;
+    font-family: "Rubik Dirt", cursive;
+}
+
+@media screen and (max-width: 960px) {
+    .i-text .i-text-mh,
+    .i-icons-row {
+        font-size: 3.2rem !important;
+        line-height: 48px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .i-text .i-text-mh,
+    .i-icons-row {
+        font-size: 2.5rem !important;
+        line-height: 48px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .i-text .i-text-mh,
+    .i-icons-row {
+        font-size: 1.7rem !important;
+        line-height: 36px;
+    }
+}
+
+.i-main-img {
+    width: 50%;
+    /* z-index: -10; */
+}
+@media screen and (max-width: 960px) {
+    .i-main-img {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .i-main-img {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 520px) {
+    .i-main-img {
+        width: 100%;
+    }
+}
+.i-icons-row {
+    font-size: 3.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 100vw;
+    height: 100vw;
+    background-color: #5ed3f329;
+    position: absolute;
+    border-radius: 50%;
+    top: -50vw;
+    top: -50vw;
+    z-index: -20;
+}

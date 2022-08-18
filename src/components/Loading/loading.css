@@ -1,0 +1,21 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 300px;
+    height: 100vh;
+}
+.loading-text{
+    margin: 4rem 0;
+    color:#0084ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+@media screen and (max-width:720px){
+    .loading-text {
+        font-size: 1rem;
+        font-style: oblique;
+    }
+}

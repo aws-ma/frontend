@@ -1,0 +1,99 @@
+.o-app-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3.125rem;
+    width: 100%;
+}
+@media screen and (max-width: 567px) {
+    .o-app-container {
+        flex-direction: column;
+        margin-bottom: 1.125rem;
+    }
+}
+.app-link {
+    height: 4.6875rem;
+    width: 18.75rem;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 2px 4px 2px #959595;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 960px) {
+    .app-link {
+        height: 2.6875rem;
+        width: 14.75rem;
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 567px) {
+    .app-link {
+        margin-bottom: 20px;
+    }
+}
+.o-gp-icon {
+    width: 2.8125rem;
+    height: 2.8125rem;
+}
+@media screen and (max-width: 960px) {
+    .o-gp-icon {
+        width: 1.8125rem;
+        height: 1.8125rem;
+    }
+}
+.o-as-icon {
+    font-size: 3rem;
+    color: #00f;
+}
+@media screen and (max-width: 960px) {
+    .o-as-icon {
+        font-size: 2rem;
+    }
+}
+.store-name {
+    margin: 0 1rem;
+    color: #5d5d5d;
+}
+@media screen and (max-width: 960px) {
+    .store-name {
+        margin: 0 0.5rem;
+    }
+}
+.app-rate {
+    color: #fff;
+    background-color: var(--main-color, #0084ff);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 2.5rem;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+    font-weight: 600;
+    position: relative;
+    width: 3.4375rem;
+    height: 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 960px) {
+    .app-rate {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        border-radius: 2.5rem;
+        padding-left: 0.375rem;
+        padding-right: 0.375rem;
+        font-weight: 600;
+        position: relative;
+        width: 2.75rem;
+        height: 1.2rem;
+    }
+}
+.rate-star {
+    color: #ffff00;
+}

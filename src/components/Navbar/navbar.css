@@ -1,0 +1,174 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 70px;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+@media screen and (max-width: 720px) {
+    .navbar {
+        height: 50px;
+    }
+}
+
+.n-logo {
+    color: var(--main-color, #0084ff);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(201.72deg, rgb(233, 97, 222), rgb(0, 132, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+@media screen and (max-width: 720px) {
+    .n-logo {
+        font-size: 1.5rem;
+    }
+}
+.n-logo span {
+    margin-left: 1rem;
+}
+.n-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+@media screen and (max-width: 960px) {
+    .n-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 50px);
+        min-height: 250px;
+        position: absolute;
+        background-color: #fff;
+        left: -100%;
+        top: -1000%;
+        padding: 1.875rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s linear;
+    }
+    @media screen and (max-height: 360px) {
+        .n-menu {
+            overflow-y: auto;
+        }
+    }
+    /* this class toggle by react */
+    .n-open {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        top: 70px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .n-open {
+        top: 50px;
+    }
+}
+.n-menu-item {
+    min-height: 70px;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+}
+
+.n-active {
+    border-bottom: 3px solid #6b34f8;
+}
+.n-menu-item-link:hover,
+.n-active {
+    background: linear-gradient(201.72deg, rgb(233, 97, 222), rgb(0, 132, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 960px) {
+    .n-menu-item {
+        width: 100%;
+        height: calc(100% / 5);
+    }
+}
+.n-menu-item-link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--main-color, #0084ff);
+}
+@media screen and (max-width: 960px) {
+    .n-menu-item-link {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+}
+.n-menu-mobile {
+    display: none;
+}
+@media screen and (max-width: 960px) {
+    .n-menu-mobile {
+        font-size: 1.8rem;
+        color: var(--main-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99999;
+    }
+}
+.scroll-up {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #fff;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fff;
+    background-color: var(--main-color, #0084ff);
+    z-index: 9999;
+    visibility: hidden;
+}
+
+/* this classes toggle by react */
+.n-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.n-scrolled {
+    box-shadow: 2px 2px 3px #3333334f;
+    background-color: #fff;
+}
+
+.scroll-up-show {
+    visibility: visible;
+}
